@@ -1,0 +1,296 @@
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Fondo*/
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+.container{
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*MOBILE-TABLET*/
+
+@media (max-width: 768px) {
+
+    /*tarjeta*/
+    .card {
+        max-width: 375px;
+        height: 100%;
+        background-color: hsl(0, 0%, 100%);
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+    }
+
+    /*imagen*/
+    .img-mobile {
+        height: 100%;
+        width: 100%;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+
+    .img-desktop {
+        display: none;
+    }
+
+    /*Perfume*/
+    .header {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        letter-spacing: 4px;
+        font-size: 13px;
+        color: hsl(228, 12%, 48%);
+        margin: 5% 0% 0% 5%
+    }
+
+
+    /*Gabrielle Essence Eau De Parfum*/
+    .title {
+        font-family: 'Fraunces', serif;
+        font-weight: 700;
+        letter-spacing: 0.1rem;
+        font-size: 32px;
+        color: hsl(212, 21%, 14%);
+        margin: 5% 0% 0% 5%
+    }
+
+    /*A floral, solar and voluptuous interpretation composed by Olivier Polge,
+  Perfumer-Creator for the House of CHANEL*/
+    .text {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: 1Px;
+        font-size: 14px;
+        color: hsl(228, 12%, 48%);
+        margin: 5%
+    }
+    
+    
+    /*Contenedor Precio*/
+    .container-price {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 5%;
+    }
+    /*Precio*/
+    .price {
+        font-family: 'Fraunces', serif;
+        font-weight: 700;
+        letter-spacing: 0.1rem;
+        font-size: 28px;
+        color: hsl(158, 36%, 37%);
+    }
+
+    /*Precio con descuento*/
+    .discount {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        letter-spacing: 0.1rem;
+        font-size: 16px;
+        text-decoration: line-through;
+        color: hsl(228, 12%, 48%);
+        margin-left: 25%
+    }
+
+    /*contenedor Botón*/
+    .container-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /*botón*/
+    .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        height: 50px;
+        background: hsl(158, 36%, 37%);
+        color: hsl(0, 0%, 100%);
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0.1rem;
+        font-size: 12px;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 5%;
+    }
+
+    .button:hover{
+        background-color: hsl(212, 21%, 14%);
+        color: hsl(0, 0%, 100%);
+    }
+
+    /*ícono carrito*/
+    .material-symbols-outlined {
+        margin-right: 2%;
+        color: hsl(0, 0%, 100%);
+        font-size: 18px;
+    }
+
+}
+
+
+/*DESKTOP*/
+@media (min-width: 768px) {
+
+    /*container*/
+
+    /*tarjeta*/
+    .card {
+        max-width: 700px;
+        background-color: hsl(0, 0%, 100%);
+        display: flex;
+        flex-direction: row;
+        border-radius: 10px;
+    }
+
+    /*imagen*/
+    .img-mobile {
+        display: none;
+    }
+
+    .img-desktop {
+        max-width: 320px;
+        height: 100%;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+
+    /*Perfume*/
+    .header {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        letter-spacing: 4px;
+        font-size: 16px;
+        color: hsl(228, 12%, 48%);
+        margin: 8% 0% 0% 6%
+    }
+
+
+    /*Gabrielle Essence Eau De Parfum*/
+    .title {
+        font-family: 'Fraunces', serif;
+        font-weight: 700;
+        letter-spacing: 0.1rem;
+        font-size: 48px;
+        color: hsl(212, 21%, 14%);
+        margin: 6% 6% 0% 6%
+    }
+
+
+    /*A floral, solar and voluptuous interpretation composed by Olivier Polge,
+      Perfumer-Creator for the House of CHANEL*/
+    .text {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        line-height: 28px;
+        letter-spacing: 1Px;
+        font-size: 18px;
+        color: hsl(228, 12%, 48%);
+        margin: 6% 6% 6% 6%
+    }
+
+    /*Contenedor Precio*/
+    .container-price {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0% 6% 6% 6%
+    }
+
+    /*Precio*/
+    .price {
+        font-family: 'Fraunces', serif;
+        font-weight: 700;
+        letter-spacing: 0.1rem;
+        font-size: 32px;
+        color: hsl(158, 36%, 37%);
+    }
+
+    /*Precio con descuento*/
+    .discount {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        letter-spacing: 0.1rem;
+        font-size: 18px;
+        text-decoration: line-through;
+        color: hsl(228, 12%, 48%);
+        margin-left: 25%
+    }
+
+
+    /*contenedor Botón*/
+    .container-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /*botón*/
+    .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        height: 50px;
+        background: hsl(158, 36%, 37%);
+        color: hsl(0, 0%, 100%);
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0.1rem;
+        font-size: 14px;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 10%;
+    }
+
+    .button:hover{
+        background-color: hsl(212, 21%, 14%);
+        color: hsl(0, 0%, 100%);
+    }
+
+    /*ícono carrito*/
+    .material-symbols-outlined {
+        margin-right: 2%;
+        color: hsl(0, 0%, 100%);
+        font-size: 18px;
+    }
+
+}
+
+
+
+
+
+
+/*atribution*/
+
+
+.attribution {
+    margin: 10%;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
