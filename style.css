@@ -11,7 +11,7 @@ body {
 }
 
 .container{
-    margin: 5%;
+    margin: 15%;
     display: flex;
     flex-direction: column;
     align-items: center;
